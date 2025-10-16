@@ -7,7 +7,19 @@
  */
 int print_last_digit(int n)
 {
-_putchart(n)
+if (n > 0)
+{	
+_putchar((n % 10) + '0' );
+}
+else
+{
+_putchar('-');
+	n = -n ;
+
+_putchar(n % 10 + '0');	
+n = -n;
+}
+
 return (n % 10);
 
 }
