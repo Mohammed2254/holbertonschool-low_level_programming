@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * File: main.h
- * Author: m
- * Description: This header file contains all function prototypes
- * used in the project.
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
