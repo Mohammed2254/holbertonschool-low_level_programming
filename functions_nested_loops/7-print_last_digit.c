@@ -7,7 +7,7 @@
  */
 int print_last_digit(int n)
 {
-
+_putchart(n)
 return (n % 10);
 
 }
