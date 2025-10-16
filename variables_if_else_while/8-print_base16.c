@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/**
+* main - prints the lowercase alphabet in reverse
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+int i;
+for (i = 0; i < 16; i++)
+{    
+if (i < 10)
+{
+putchart(i + '0');
+}
+else
+{
+putchart(i - 10 + 'a');
+}
+return (0);
+}
