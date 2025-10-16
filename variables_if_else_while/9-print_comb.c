@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: Briefly describes what the program does
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    int i;
+	for(i = 0; i < 11; i++)
+	{
+		putchar(i + 'a');
+		putchar(',');
+		putchar(' ');
+	}
+	putchar('\n');
+    return (0);
+}
+
