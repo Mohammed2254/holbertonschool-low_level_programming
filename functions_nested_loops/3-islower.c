@@ -18,10 +18,9 @@ int _islower(int c)
 	
 	} else if (i != c)
 	{
-		if (c == 122)
-		{
 		g = 0;
-		}
+		
+		
 	}
 	}
 return(g);	
