@@ -7,8 +7,14 @@ void jack_bauer(void)
 {
 int min, hours;
 
+_putchar('0');
+_putchar('0');
+_putchar(':');
+_putchar('0');
+_putchar('0');
+
 	for (min = hours = 0; hours < 24;)
-	{	min++;
+	{	min++
 	
 		if (min == 60)
 		{
