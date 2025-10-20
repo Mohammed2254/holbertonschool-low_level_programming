@@ -26,7 +26,7 @@ int n;
 		}
 		if (n != 100)
 		{
-			printf("");
+			printf(" ");
 		}
 	}
 
