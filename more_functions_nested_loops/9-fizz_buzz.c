@@ -24,10 +24,7 @@ int n;
 
 		printf("%d", n);
 		}
-		if (n != 100)
-		{
 			printf(" ");
-		}
 	}
 
 return (0);
