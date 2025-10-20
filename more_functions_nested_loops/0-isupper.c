@@ -3,7 +3,7 @@
  *_isupper - chech if upper or lowercase
  *
  *
- * return 0 if lower , 1 if upper. 
+ * return 0 if lower , 1 if upper.
  */
  int _isupper(int c)
 {
