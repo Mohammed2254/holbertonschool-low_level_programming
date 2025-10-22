@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-
+/**
+ * main - prints numbers from 1 to 100, replacing multiples of 3 and 5
+ * Description: prints "Fizz" for multiples of 3, "Buzz" for multiples of 5,
+ * and "FizzBuzz" for numbers that are multiples of both 3 and 5.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
@@ -24,11 +29,8 @@ int n;
 
 		printf("%d", n);
 		}
-		if (n != 100)
-		{
 			printf(" ");
-		}	
 	}
-
+printf("\n");
 return (0);
 }
