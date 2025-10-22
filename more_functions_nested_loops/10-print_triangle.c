@@ -6,13 +6,14 @@
  */
 void print_triangle(int size)
 {
+int spaces;
+int hash;
+
 	if (size <= 0)
 	{
 		_putchar('\n');
 			return;
 	}
-int spaces;
-int hash;
 	for (spaces = size; spaces > 0; spaces--)
 	{
 		_putchar(' ');
