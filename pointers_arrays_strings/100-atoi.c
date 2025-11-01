@@ -12,20 +12,31 @@ int i = 0;
 int sign = 1;
 int result = 0;
 int started = 0;
+int prev;
 
-	while (s[i] != '\0')
-	{
-		if (s[i] == '-')
-			sign *= -1;
-		else if (s[i] >= '0' && s[i] <= '9')
-		{
-			started = 1;
-			result = result * 10 + (s[i] - '0');
-		}
-		else if (started)
-		break;
-	i++;
-	}
+while (s[i] != '\0')
+{
+if (s[i] == '-')
+sign *= -1;
+else if (s[i] >= '0' && s[i] <= '9')
+{
+started = 1;
+prev = result;
+result = result * 10 + (s[i] - '0');
+
+/* check for overflow */
+if (result / 10 != prev)
+{
+if (sign == 1)
+return (2147483647);
+else
+return (-2147483648);
+}
+}
+else if (started)
+break;
+i++;
+}
 return (result * sign);
 }
 
