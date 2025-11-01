@@ -39,4 +39,3 @@ i++;
 }
 return (result * sign);
 }
-
