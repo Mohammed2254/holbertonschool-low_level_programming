@@ -1,3 +1,5 @@
+#include "main.h"
+#define NULL ((void *)0)
 /**
  * _strstr - Locates a substring.
  * Finds the first occurrence of the entire string needle
