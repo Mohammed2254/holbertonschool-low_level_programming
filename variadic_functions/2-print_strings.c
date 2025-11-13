@@ -11,12 +11,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
 va_list par;
+int *p = NULL;
 
 va_start(par, n);
 
 	for (i = 0 ; i < n ; i++)
 	{
-		if (va_arg(par, int) == NULL)
+		if (va_arg(par, int) == p)
 		{
 			printf("(nil)");
 		}
