@@ -16,9 +16,9 @@ va_start(par, n);
 	for (i = 0 ; i < n; i++)
 	{
 			printf("%d", va_arg(par, int));
-			if (*separator != NULL && i + 1 != n)
+			if (separator != NULL && i + 1 != n)
 			{
-				printf("%c ", *separator);
+				printf("%s", separator);
 			}
 		
 	}
