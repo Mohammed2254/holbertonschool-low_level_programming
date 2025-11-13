@@ -1,7 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>i
+#include <limits.h>
 #include <string.h>
 /** * main - Entry point for the simple calculator program
  * @argc: Number of arguments passed to the program
@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 	char *operator = NULL;
 	int num1;
 	int num2;
+	int result;
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -39,5 +40,7 @@ int main(int argc, char *argv[])
 	{
 		printf ("Error\n"); exit(99);
 	}
+	result = get_op_func(operator)(num1, num2);
+	printf("%d\n", result);
 	return (0);
 }
