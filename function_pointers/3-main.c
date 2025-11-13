@@ -3,42 +3,48 @@
 #include <stdio.h>
 #include <limits.h>
 #include <string.h>
-/** * main - Entry point for the simple calculator program
- * @argc: Number of arguments passed to the program
+/*
+ * main - Entry point for the simple calculator program
+ * @argc: Number of arguments
  * @argv: Array of strings containing the arguments
+ *
  * Description: This program performs a simple arithmetic operation
- * on two integers based on the operator provided as input. It checks
- * *for the correct number of arguments, validates the operator, and *
- * handles division/modulo by zero. The program exits with specific *
- * status codes for errors: 
+ * on two integers based on the operator provided as input.
+ * It checks for the correct number of arguments, validates the operator,
+ * and handles division/modulo by zero.
+ *
+ * The program exits with specific status codes:
  * 98 - Incorrect number of arguments
  * 99 - Invalid operator
  * 100 - Division or modulo by zero
+ *
  * Return: 0 on success
- * */ 
+ */
 int main(int argc, char *argv[])
 {
 	char *operator = NULL;
 	int num1;
 	int num2;
 	int result;
+
 	if (argc != 4)
 	{
-		printf("Error\n");
+	printf("Error\n");
 	exit(98);
 	}
 	operator = argv[2];
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	if ((strcmp(operator, "%") == 0 ||strcmp(operator, "/") == 0) && num2 == 0)
+	if ((strcmp(operator, "%") == 0 || strcmp(operator, "/") == 0) && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 	if (get_op_func(operator) == NULL)
 	{
-		printf ("Error\n"); exit(99);
+		printf("Error\n");
+		exit(99);
 	}
 	result = get_op_func(operator)(num1, num2);
 	printf("%d\n", result);
