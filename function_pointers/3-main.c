@@ -3,22 +3,17 @@
 #include <stdio.h>
 #include <limits.h>
 #include <string.h>
-/*
- * main - Entry point for the simple calculator program
- * @argc: Number of arguments
+/**
+ * main - Performs simple arithmetic operations based on user input
+ * @argc: Number of arguments passed to the program
  * @argv: Array of strings containing the arguments
  *
- * Description: This program performs a simple arithmetic operation
- * on two integers based on the operator provided as input.
- * It checks for the correct number of arguments, validates the operator,
- * and handles division/modulo by zero.
+ * Description: This function takes three arguments from the command line:
+ * two integers and an operator. It validates the input and performs the
+ * corresponding arithmetic operation (addition, subtraction, multiplication,
+ * division, or modulo). It prints the result to standard output.
  *
- * The program exits with specific status codes:
- * 98 - Incorrect number of arguments
- * 99 - Invalid operator
- * 100 - Division or modulo by zero
- *
- * Return: 0 on success
+ * Return: 0 on success, or exits with specific status codes on error
  */
 int main(int argc, char *argv[])
 {
