@@ -22,9 +22,12 @@ va_start(par, n);
 		else
 		{
 		printf(" %d", va_arg(par, int));
+		}
 		if (i < n - 1 && separator != NULL)
+		{
 			printf("%c", *separator);
 		}
+		
 	}
 va_end(par);
 
