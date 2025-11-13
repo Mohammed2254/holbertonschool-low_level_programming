@@ -7,23 +7,21 @@
 * @separator: the string to be printed between numbers
 * @n: the number of integers passed to the function
 */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
 va_list par;
-int *p = NULL;
-
 va_start(par, n);
 
 	for (i = 0 ; i < n ; i++)
 	{
-		if (va_arg(par, int) == p)
+		if ( == )
 		{
 			printf("(nil)");
 		}
 		else
 		{
-		printf("%d", va_arg(par, int));
+		printf("%s", va_arg(par, char*));
 		}
 
 		if (separator != NULL && i + 1 != n)
