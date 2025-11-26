@@ -14,15 +14,21 @@ list_t *new = malloc(sizeof(list_t));
 int i = 0;
 
 	if (new == NULL)
+	{
+		free(new);
 		return (NULL);
+	}
 
 	while (str[i] != '\0')
 		i++;
 
 new->str = strdup(str);
 
-if (strdup(str) == NULL)
+if (new->str == NULL)
+{
+	free(new);
 	return (NULL);
+}
 
 new->len = i;
 new->next = *head;
