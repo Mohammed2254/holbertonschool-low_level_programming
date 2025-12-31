@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * leet - Converts certain letters in a string to their "1337" (leet) equivalents.
+ * leet - Converts certain letters.
  *
  * @s: Pointer to the string to be converted.
  *
@@ -13,7 +13,7 @@ char *leet(char *s)
 	int i = 0;
 	int j = 0;
 
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		while (letters[j])
 		{
