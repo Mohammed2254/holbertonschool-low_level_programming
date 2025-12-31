@@ -18,7 +18,6 @@ char *leet(char *s)
 	char *letters = "aAeEoOtTlL";
 	int i = 0;
 	int j = 0;
-	int result = 0;
 
 	while(s[i] != '\0')
 	{
